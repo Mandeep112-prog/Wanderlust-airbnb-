@@ -94,7 +94,7 @@ app.use((req, res, next) => {
 //     });
 //     let registerUser = await User.register(fakeUser,"helloworld");
 //     res.send(registerUser);
-// });
+//   });
 
 app.get("/", (req, res) => {
     res.redirect("/listings");
