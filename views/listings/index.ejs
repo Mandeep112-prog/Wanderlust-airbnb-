@@ -3,6 +3,7 @@
     #filters {
       display: flex;
       flex-wrap: wrap;
+      
     }
 
     .filter {
@@ -21,6 +22,46 @@
       font-size:0.8rem
     }
 
+    @media (max-width: 767px) {
+
+    #filters {
+        width: 100%;
+
+        display: flex;
+        flex-wrap: nowrap;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        gap: 1.5rem;
+
+        padding: 1rem 0.5rem;
+
+        /* navbar ke neeche proper separation */
+        margin-top: 0.5rem;
+
+        background-color: white;
+
+        scrollbar-width: none;
+    }
+
+    #filters::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter {
+        flex: 0 0 auto;
+        min-width: 65px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .filter p {
+        font-size: 0.7rem;
+        white-space: nowrap;
+        margin-top: 0.3rem;
+    }
+  }
 
   </style>
 
